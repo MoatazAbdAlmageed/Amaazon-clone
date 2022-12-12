@@ -1,0 +1,169 @@
+[debug] [2022-12-11T02:11:04.272Z] ----------------------------------------------------------------------
+[debug] [2022-12-11T02:11:04.275Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\river\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-11T02:11:04.275Z] CLI Version:   11.16.1
+[debug] [2022-12-11T02:11:04.275Z] Platform:      win32
+[debug] [2022-12-11T02:11:04.276Z] Node Version:  v19.2.0
+[debug] [2022-12-11T02:11:04.276Z] Time:          Sun Dec 11 2022 04:11:04 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2022-12-11T02:11:04.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-11T02:11:04.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-11T02:11:04.370Z] > authorizing via signed-in user (mohimm00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MYprotfilo\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-11T02:11:34.734Z] Using project from CLI flag: clone-6d7e8
+[debug] [2022-12-11T02:11:34.736Z] > refreshing access token with scopes: []
+[debug] [2022-12-11T02:11:34.740Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-11T02:11:34.740Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T02:11:35.763Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-11T02:11:35.763Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T02:11:35.838Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 [none]
+[debug] [2022-12-11T02:11:36.709Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 200
+[debug] [2022-12-11T02:11:36.710Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 {"projectId":"clone-6d7e8","projectNumber":"984463038696","displayName":"Amazon-clone","name":"projects/clone-6d7e8","resources":{"hostingSite":"clone-6d7e8"},"state":"ACTIVE","etag":"1_9f2f2442-61c2-4a36-a83c-46ae8d7edb95"}
+[info] i  Using project clone-6d7e8 (Amazon-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-12-11T02:12:10.336Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-12-11T02:12:10.991Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-12-11T02:12:10.992Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\MYprotfilo\amazon-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=52618366&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-12-11T02:12:32.236Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-12-11T02:12:32.238Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-12-11T02:12:33.503Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-12-11T02:12:33.503Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-12-11T02:12:33.561Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-12-11T02:12:34.497Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-12-11T02:12:34.497Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Mohay5","id":95354095,"node_id":"U_kgDOBa787w","avatar_url":"https://avatars.githubusercontent.com/u/95354095?v=4","gravatar_id":"","url":"https://api.github.com/users/Mohay5","html_url":"https://github.com/Mohay5","followers_url":"https://api.github.com/users/Mohay5/followers","following_url":"https://api.github.com/users/Mohay5/following{/other_user}","gists_url":"https://api.github.com/users/Mohay5/gists{/gist_id}","starred_url":"https://api.github.com/users/Mohay5/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Mohay5/subscriptions","organizations_url":"https://api.github.com/users/Mohay5/orgs","repos_url":"https://api.github.com/users/Mohay5/repos","events_url":"https://api.github.com/users/Mohay5/events{/privacy}","received_events_url":"https://api.github.com/users/Mohay5/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":17,"public_gists":0,"followers":2,"following":5,"created_at":"2021-12-01T12:14:14Z","updated_at":"2022-12-11T02:12:22Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":51483,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Mohay5 
+[info] 
+[debug] [2022-12-11T02:19:12.139Z] >>> [apiv2][query] GET https://api.github.com/repos/USERNAME/REPOSITORYNAME/actions/secrets/public-key type=owner
+[debug] [2022-12-11T02:19:12.950Z] <<< [apiv2][status] GET https://api.github.com/repos/USERNAME/REPOSITORYNAME/actions/secrets/public-key 404
+[debug] [2022-12-11T02:19:12.950Z] <<< [apiv2][body] GET https://api.github.com/repos/USERNAME/REPOSITORYNAME/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-12-11T02:19:39.174Z] >>> [apiv2][query] GET https://api.github.com/repos/USERNAME/mohay5/actions/secrets/public-key type=owner
+[debug] [2022-12-11T02:19:39.958Z] <<< [apiv2][status] GET https://api.github.com/repos/USERNAME/mohay5/actions/secrets/public-key 404
+[debug] [2022-12-11T02:19:39.959Z] <<< [apiv2][body] GET https://api.github.com/repos/USERNAME/mohay5/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-12-11T02:20:06.292Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2022-12-11T02:20:07.116Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2022-12-11T02:20:07.116Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-12-11T03:02:00.886Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-12-11T03:02:01.616Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-12-11T03:02:01.617Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-12-11T03:02:11.925Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2022-12-11T03:02:12.716Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2022-12-11T03:02:12.716Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-12-11T10:26:22.421Z] ----------------------------------------------------------------------
+[debug] [2022-12-11T10:26:22.424Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\river\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-11T10:26:22.424Z] CLI Version:   11.16.1
+[debug] [2022-12-11T10:26:22.425Z] Platform:      win32
+[debug] [2022-12-11T10:26:22.425Z] Node Version:  v19.2.0
+[debug] [2022-12-11T10:26:22.425Z] Time:          Sun Dec 11 2022 12:26:22 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2022-12-11T10:26:22.425Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-11T10:26:22.436Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-11T10:26:22.596Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-11T10:26:22.597Z] > authorizing via signed-in user (mohimm00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MYprotfilo\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-12-11T10:26:23.446Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-11T10:26:23.447Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-11T10:26:47.955Z] Using project from CLI flag: clone-6d7e8
+[debug] [2022-12-11T10:26:47.956Z] > refreshing access token with scopes: []
+[debug] [2022-12-11T10:26:47.957Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-11T10:26:47.957Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T10:26:48.587Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-11T10:26:48.588Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T10:26:48.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 [none]
+[debug] [2022-12-11T10:26:49.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 200
+[debug] [2022-12-11T10:26:49.474Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-6d7e8 {"projectId":"clone-6d7e8","projectNumber":"984463038696","displayName":"Amazon-clone","name":"projects/clone-6d7e8","resources":{"hostingSite":"clone-6d7e8"},"state":"ACTIVE","etag":"1_b8a3121e-8b8e-4091-9d15-5f1a7c99e905"}
+[info] i  Using project clone-6d7e8 (Amazon-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-12-11T10:27:38.633Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-12-11T10:27:39.272Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-12-11T10:27:39.273Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\MYprotfilo\amazon-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=736769842&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-12-11T10:28:07.697Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-12-11T10:28:07.697Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-12-11T10:28:11.096Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-12-11T10:28:11.096Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-12-11T10:28:11.190Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-12-11T10:28:16.161Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-12-11T10:28:16.161Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Mohay5","id":95354095,"node_id":"U_kgDOBa787w","avatar_url":"https://avatars.githubusercontent.com/u/95354095?v=4","gravatar_id":"","url":"https://api.github.com/users/Mohay5","html_url":"https://github.com/Mohay5","followers_url":"https://api.github.com/users/Mohay5/followers","following_url":"https://api.github.com/users/Mohay5/following{/other_user}","gists_url":"https://api.github.com/users/Mohay5/gists{/gist_id}","starred_url":"https://api.github.com/users/Mohay5/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Mohay5/subscriptions","organizations_url":"https://api.github.com/users/Mohay5/orgs","repos_url":"https://api.github.com/users/Mohay5/repos","events_url":"https://api.github.com/users/Mohay5/events{/privacy}","received_events_url":"https://api.github.com/users/Mohay5/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":17,"public_gists":0,"followers":2,"following":5,"created_at":"2021-12-01T12:14:14Z","updated_at":"2022-12-11T05:26:32Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":51483,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Mohay5 
+[info] 
+[debug] [2022-12-11T10:30:35.066Z] >>> [apiv2][query] GET https://api.github.com/repos/Mohay5/actions/secrets/public-key type=owner
+[debug] [2022-12-11T10:30:35.871Z] <<< [apiv2][status] GET https://api.github.com/repos/Mohay5/actions/secrets/public-key 404
+[debug] [2022-12-11T10:30:35.871Z] <<< [apiv2][body] GET https://api.github.com/repos/Mohay5/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-12-11T10:34:22.651Z] >>> [apiv2][query] GET https://api.github.com/repos/USERNAME/Mohay5/actions/secrets/public-key type=owner
+[debug] [2022-12-11T10:34:23.392Z] <<< [apiv2][status] GET https://api.github.com/repos/USERNAME/Mohay5/actions/secrets/public-key 404
+[debug] [2022-12-11T10:34:23.393Z] <<< [apiv2][body] GET https://api.github.com/repos/USERNAME/Mohay5/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-12-11T10:34:52.958Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2022-12-11T10:34:53.690Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2022-12-11T10:34:53.691Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
